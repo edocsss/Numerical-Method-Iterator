@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <meta charset="utf8">
+        <title>Numerical Method</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body id="body">
+        <div id="container">
+            <div id="title">
+                <p id="titlep">Numerical Method</p>
+            </div>
+            
+            <div id="select">
+                <p id="selectp">Choose method :</p>
+                <select id="method">
+                    <option value="bisection">Bisection Method</option>
+                    <option value="linearinterpolation">Linear Interpolation</option>
+                </select>
+                <br>
+                <p id="function_p">Function : <input type="text" placeholder="JavaScript expression only! Argument is x" id = "functionbox"></p>
+                <p id="p_x1">X1 : <input type="text" placeholder="Write the first x here!" id="x1"></p>
+                <p id="p_x2">X2 : <input type="text" placeholder="Write the second x here!" id="x2"></p>
+            </div>
+            
+            <div id="image">
+                <a href="http://www.w3schools.com/jsref/jsref_obj_math.asp" target="_blank">
+                    <img src="q_mark.png" height=25 width=25 id="question">
+                </a>
+            </div>
+            
+            <div id="buttons">
+                <button id="start" class="btn btn-default">Start!</button>
+                <button id="reset" class="btn btn-default">Reset</button>
+            </div>
+            
+            <div id="explain">
+                <p>JavaScript Math Expression:</p>
+                <ul>
+                    <li><b>Math.abs(x)</b> = returns the absolute value of x</li>
+                    <li><b>Math.acos(x)</b> = returns the arccos of x, in radians</li>
+                    <li><b>Math.asin(x)</b> = returns the arcsin of x, in radians</li>
+                    <li><b>Math.atan(x)</b> = returns the arctan of x, in radians</li>
+                    <li><b>Math.cos(x)</b>, Math.sin(x), Math.tan(x) = returns cos, sin, or tan of x respectively</li>
+                    <li><b>Math.pow(x , y)</b> = returns the value of x to the power of y</li>
+                    <li><b>Math.sqrt(x)</b> = returns the square root of x</li>
+                    <li><b>Math.E</b> = returns Euler's number</li>
+                    <li><b>Math.PI</b> = returns the value of Pi</li>
+                </ul>
+            </div>
+            
+            <div id="result">RESULT</div>
+            <div id="target"></div>
+        </div>
+        
+        <script src="engine.js"></script>
+        <script src="jquery-1.10.2.js"></script>
+    </body>
+    
+</html>
