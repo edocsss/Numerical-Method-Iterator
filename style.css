@@ -361,4 +361,5 @@ fieldset[disabled] .btn-default.active {
     color: white;
     text-align: center;
     font-weight: : 200;
+    z-index: -1;
 }
