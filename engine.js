@@ -140,6 +140,119 @@ function f(x, dummy) {
 }
 
 
+function time_now() {
+    var fulldate, fulltime;
+    var time = new Date();
+    var offset = -(time.getTimezoneOffset() / 60);
+    var day = time.getUTCDay();
+    var month = time.getUTCMonth();
+    var year = time.getUTCFullYear();
+    var hour = time.getUTCHours() + offset;
+    var min = time.getUTCMinutes();
+    var sec = time.getUTCSeconds();
+    var date = time.getUTCDate();
+    var target = document.getElementById('time');
+
+    switch (day) {
+        case 0 : 
+            day = "Sunday"; 
+            break;
+            case 1 : 
+            day = "Monday";
+            break;
+
+        case 2 :
+            day = "Tuesday";
+            break;
+
+        case 3 :
+            day = "Wednesday";
+            break;
+
+        case 4 :
+            day = "Thursday";
+            break;
+
+        case 5 :
+            day = "Friday";
+            break;
+
+        case 6 :
+            day = "Saturday";
+            break;
+    }
+
+    switch (month) {
+        case 0 : 
+            month = "January";
+            break;
+
+        case 1 : 
+            month = "February";
+            break;
+
+        case 2 : 
+            month = "March";
+            break;
+
+        case 3 : 
+            month = "April";
+            break;
+
+        case 4 : 
+            month = "May";
+            break;
+
+        case 5 : 
+            month = "June";
+            break;
+
+        case 6 : 
+            month = "July";
+            break;
+
+        case 7 : 
+            month = "August";
+            break;
+
+        case 8 : 
+            month = "September";
+            break;
+
+        case 9 : 
+            month = "October";
+            break;
+
+        case 10 :
+            month = "November";
+            break;
+
+        case 11 :
+            month = "December";
+            break;
+    }
+
+    fulldate = day + ", " + date + " " + month + " " + year;
+
+    hour = checkTime(hour);
+    min = checkTime(min);
+    sec = checkTime(sec);
+
+    fulltime = hour + " : " + min + " : " + sec;
+
+    target.innerHTML = fulldate + ' ' + fulltime;
+    console.log(min);
+    setTimeout(function() {time_now()}, 500);
+}
+
+function checkTime(n) {
+    if (n < 10)
+        return "0" + n;
+        
+    return n;
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     //Variable declarations
     var target = document.getElementById('target');
@@ -310,7 +423,8 @@ document.addEventListener("DOMContentLoaded", function () {
             close = null;
         }
     }
-
+    
+    time_now();
     function q_out() {
         close = window.setTimeout(function() {
             $("#explain").fadeOut('fast');
