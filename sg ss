@@ -1,0 +1,48 @@
+[33mcommit ae68fc2855198a2ec2a875bcfaca57ea868719d5[m
+Author: edocsss <edwin.candinegara@gmail.com>
+Date:   Tue Mar 18 23:06:20 2014 +0800
+
+    Minor fix
+
+[33mcommit 3e2c1936c742595e56f7905d0094d4d49a542670[m
+Author: edocsss <edwin.candinegara@gmail.com>
+Date:   Tue Mar 18 23:02:04 2014 +0800
+
+    Added date and time
+
+[33mcommit 25c4aae044a96c707810879e3ae3801eb0c179b8[m
+Author: edocsss <edwin.candinegara@gmail.com>
+Date:   Mon Mar 17 01:08:49 2014 +0800
+
+    Edit readme.txt
+
+[33mcommit 477c7fdc20a65be4cbbcb360892f1ea72d1f3c34[m
+Author: edocsss <edwin.candinegara@gmail.com>
+Date:   Mon Mar 17 01:01:56 2014 +0800
+
+    Delete README.md
+
+[33mcommit 18c34564449a1cf33d4f5bf6224325584b2a1a1e[m
+Merge: 9b01511 9670d83
+Author: edocsss <edwin.candinegara@gmail.com>
+Date:   Mon Mar 17 00:58:46 2014 +0800
+
+    Merge branch 'master' of github.com:edocsss/Numerical-Method-Iterator
+
+[33mcommit 9b015110e7ca9d701fdd1936087cc8d394c685a6[m
+Author: edocsss <edwin.candinegara@gmail.com>
+Date:   Mon Mar 17 00:50:43 2014 +0800
+
+    Added readme.txt
+
+[33mcommit cd7ceaac3e80cbd7b615479c03d2a9ba1ed14991[m
+Author: edocsss <edwin.candinegara@gmail.com>
+Date:   Mon Mar 17 00:39:20 2014 +0800
+
+    Adding all file first time
+
+[33mcommit 9670d83481fb7ac63c1ff10abca66158802a2f27[m
+Author: Edwin Candinegara <edocsss@users.noreply.github.com>
+Date:   Sun Mar 16 09:33:29 2014 -0700
+
+    Initial commit
